@@ -22,3 +22,6 @@ Fancier version of running and testing:
 then you could run via
 `flask run`
 and also execute `flask test`, `flask coverage` for some unit testing
+
+host externally?
+`flask run --host=0.0.0.0`
