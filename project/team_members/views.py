@@ -18,3 +18,9 @@ def team_members():
 # @login_required
 def maryssa():
     return render_template('Maryssa_Metheny.html')
+
+
+@team_members_blueprint.route('/team_members/Sangita_Sahoo', methods=['GET', 'POST'])
+# @login_required
+def sangita():
+    return render_template('Sangita_Sahoo.html')
