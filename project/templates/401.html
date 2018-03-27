@@ -1,0 +1,9 @@
+{% extends "base.html" %}
+{% block content %}
+
+      <h1>Unauthorized: Access is denied due to invalid credentials.</h1>
+      <p>Maybe the site you're trying to go needs login first</p>
+      <p>Maybe you're not logged in and you're trying to log out</p>
+      <p>Contact <a href="mailto:{{ email }}">{{ author }}</a> for more information</p>
+
+{% endblock %}
