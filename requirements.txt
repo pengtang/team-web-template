@@ -1,5 +1,9 @@
 flask
 flask-paginate
 flask_sqlalchemy
+flask-bcrypt
+flask-login
+flask-wtform
+wtforms
 coverage
 click
