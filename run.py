@@ -1,8 +1,14 @@
-from project import app
+from flask.helpers import get_debug_flag
 import click
 import coverage
 import unittest
+
+from project import create_app
+from project.config import DevConfig, ProdConfig
 # Need to run "export FLASK_APP=run.py" before running "flask test", "flask coverage" etc.
+
+CONFIG = DevConfig if get_debug_flag() else ProdConfig
+app = create_app(CONFIG)
 
 
 @app.cli.command()
