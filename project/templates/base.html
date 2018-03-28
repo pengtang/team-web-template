@@ -29,6 +29,9 @@
         <li>
             <a href="/team_members">Team Member</a>
         </li>
+        <li>
+            <a href="/blogs">Blog Posts</a>
+        </li>
         {% if current_user.is_authenticated %}
             <li style="float:right"><a class="active" href="/logout">logout</a></li>
             <li style="float:right"><a class="active" href="#{{ current_user.username }}">{{ current_user.username }}</a></li>

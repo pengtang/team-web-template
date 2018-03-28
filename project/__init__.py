@@ -6,6 +6,7 @@ from project.team_resources.views import team_resources_blueprint
 from project.team_resources.onboarding.views import onboarding_blueprint
 from project.team_members.views import team_members_blueprint
 from project.users.views import users_blueprint
+from project.blogs.views import blogs_blueprint
 
 from project.extensions import bcrypt, csrf_protect, login_manager, db, migrate, cache, debug_toolbar
 from project.config import ProdConfig
@@ -51,6 +52,7 @@ def register_blueprints(app):
     app.register_blueprint(onboarding_blueprint)
     app.register_blueprint(team_members_blueprint)
     app.register_blueprint(users_blueprint)
+    app.register_blueprint(blogs_blueprint)
     return None
 
 
