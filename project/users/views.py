@@ -4,7 +4,7 @@ from sqlalchemy import desc
 
 from project.users.forms import RegistrationForm, LoginForm  # relative import
 from project.users.models import *  # relative import
-from project.extensions import db, bcrypt, login_manager  # relative import
+from project.extensions import db, login_manager  # relative import
 
 
 users_blueprint = Blueprint(
