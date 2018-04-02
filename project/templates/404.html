@@ -1,8 +1,25 @@
+
 {% extends "base.html" %}
 {% block content %}
 
-      <h1>Page Not Found</h1>
-      <p>What you were looking for is just not there.</p>
-      <p>Contact <a href="mailto:{{ email }}">{{ author }}</a> for more information</p>
+	<!-- Content-->
+	<div class="md-content">
+		<div class="consult-404">
+			<div class="md-tb">
+				<div class="md-tb__cell">
+					<div class="container">
+						<div class="row">
+							<div class="col-lg-10 offset-0 offset-sm-0 offset-md-0 offset-lg-1 ">
+								<div class="consult-404__content"><img src="../static/img/404.jpg" alt="">
+									<h1>404</h1>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- End / Content-->
 
 {% endblock %}
