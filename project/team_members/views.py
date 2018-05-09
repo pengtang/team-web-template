@@ -42,15 +42,3 @@ def devops_engineers():
 @team_members_blueprint.route('/team_members/project_management')
 def project_management():
     return render_template('project_management.html')
-
-
-@team_members_blueprint.route('/team_members/Maryssa_Metheny', methods=['GET', 'POST'])
-# @login_required
-def maryssa():
-    return render_template('Maryssa_Metheny.html')
-
-
-@team_members_blueprint.route('/team_members/Sangita_Sahoo', methods=['GET', 'POST'])
-# @login_required
-def sangita():
-    return render_template('Sangita_Sahoo.html')
